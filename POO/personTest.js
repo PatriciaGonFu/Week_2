@@ -1,0 +1,2 @@
+let {Person} = require ("/.RetosPoo")
+
