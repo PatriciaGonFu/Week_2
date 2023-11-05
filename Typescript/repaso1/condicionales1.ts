@@ -87,3 +87,7 @@ function isEven (number:number):void{
 }
 
 
+module.exports = {
+    isEven
+}
+

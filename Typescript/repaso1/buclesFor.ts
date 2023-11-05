@@ -51,4 +51,9 @@ const animalChain:string[] = ['gato','perro','mono']
 let sumaAnimalChain:number = animalChain.add
 console.log(sumaAnimalChain);
 
-no funciona, al hacer la prueba en js me indica undefined
+module.exports = {
+    add
+}
+
+// no funciona, al hacer la prueba en js me indica undefined
+

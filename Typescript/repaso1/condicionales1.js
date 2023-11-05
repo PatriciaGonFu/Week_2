@@ -61,3 +61,6 @@ function isEven(number) {
         console.log("El numero es impar");
     }
 }
+module.exports = {
+    isEven: isEven
+};
