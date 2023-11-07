@@ -1,8 +1,45 @@
-let lib = require(C:\Users\patru\OneDrive\Escritorio\BOOTCAMP\Modulo1Retos\POO\RetosPoo.JS)
+class Person
+{
+    constructor(nombre,apellidos,altura,peso,yearOfBirth,hobbies)
+    {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.altura = altura;
+        this.peso = peso;
+        this.yearOfBirth = yearOfBirth;
+        this.hobbies = hobbies;
+    }
+    calculoImc()
+    {
+        return this.peso / (this.altura**2);
+    }
 
-let patricia = new Person ('Patricia','Gonzalez Fuertes', 165, 55, 1979, ['leer','cocinar','viajar']);
-console.log(patricia);
-let imc = patricia.lib.calculoImc();
-let edad = patricia.lib.calculoEdad();
-console.log(imc);
-console.log(edad);
+    calculoEdad()
+    {
+        const currentDate    = new Date();
+        const currentYear = currentDate.getFullYear();
+        return currentYear - this.yearOfBirth;
+
+    }
+
+    printAll()
+    {
+        console.log(`${this.nombre} - ${nombre}
+            ${this.apellidos} - ${apellidos}
+            ${this.altura} - ${this.altura}
+            ${this.peso} - ${peso}
+            ${this.yearOfBirth} - ${this.yearOfBirth}
+            `);
+    }
+
+    printHobbies ()
+    {
+        for (let i = 0; i<=this.hobbies.length; i++)
+        console.log(this.hobbies[i]);           
+                
+    }
+}
+module.exports = {
+    Person
+}
+
