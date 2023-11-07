@@ -2,16 +2,16 @@ let {Person} = require ("./person.js")
 
 class Contacts
 {
-    constructor (){
-        this.person = [];
+    constructor (Person){
+        this.persons = [];
     }
-    printPersons()
+    printPersons(person)
     {
-        for (let i = 0; i<this.person.length; i++)
-        console.log(this.person.printAll());
-    }
-    
+           this.persons.push(person);
+           console.log(this.persons);
+    }   
 }
+
 module.exports = {
     Contacts
 }

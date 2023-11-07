@@ -8,3 +8,4 @@ console.log(imc);
 console.log(edad);
 
 
+
