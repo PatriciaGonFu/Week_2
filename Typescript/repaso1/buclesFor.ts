@@ -1,18 +1,26 @@
 // function evenNumbers(num:number):void{
-//     for (let i:number = 1;i<=num;i +=2);
+//     for (let i:number = 1;i<=num;i +=2)
 //     {
 //         console.log(i);
 //     }
 // }
 
 // evenNumbers(15);
-// no se por qué no reconoce i al pedir el console.log
 
 // Realizar una función que como parámetro de entrada reciba un array y como salida
 // devuelva el array revertido. No se puede utilizar el método revert de la clase array
 // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
 
-// no sé cómo se hace
+// function myRevert(myArr: number[]): number[] {
+//     for (let i = myArr.length - 1; i >= 0; i--) {
+//         const arrayAux = myArr[]: number[];
+//         myArr[length - 1 - i] = myArr[i];
+//         myArr[i] = arrayAux;
+//     }
+//     return myArr;
+// }
+
+// me sale error en la linea 16
 
 // Realizar una función que reciba como parámetro un array de strings que contenga
 // nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.
@@ -32,24 +40,18 @@
 
 // isRainbow(['verde','rosa','amarillo','morado']);
 
-// problema al compilar, indica:
-// buclesFor.ts:24:21 - error TS2550: Property 'includes' does not exist on type 'string[]'.
-//  Do you need to change your target library? Try changing the 'lib' compiler option to 
-//  'es2016' or later.
-
 // Realizar una función que te devuelva la suma del numero de caracteres de las palabras
 // almacenadas en un array.
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 
 function add(myWords:string[]):number{
     let suma = 0;
-    for (i=0;i<myWords.length;i++){
-        suma = suma + myWords[i];
+    for (i=0; i<myWords.length; i++){
+        suma = suma + myWords.length[i];
     }
+    return suma
 }
-const animalChain:string[] = ['gato','perro','mono']
-let sumaAnimalChain:number = animalChain.add
-console.log(sumaAnimalChain);
+console.log(add(['gato','perro','mono']))
 
 module.exports = {
     add

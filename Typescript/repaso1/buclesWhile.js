@@ -10,16 +10,15 @@ function hasEven(myNums) {
 var ages = [5, 8, 42, 44];
 console.log(hasEven(ages));
 function startWithM(myNames) {
+    var allStartWithM = true;
     var i = 0;
-    while (i < myNames.length) {
-        if (!myNames[i].startsWith('M')) {
-            return false;
-        }
-        else {
-            return true;
+    while (allStartWithM && i < myNames.length) {
+        if (myNames[i][0] !== 'M') {
+            allStartWithM = false;
         }
         i++;
     }
+    return allStartWithM;
 }
 var familyNames = ['Vega', 'Lucas', 'Jacobo', 'Patricia'];
 console.log(startWithM(familyNames));

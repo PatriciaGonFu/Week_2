@@ -12,25 +12,25 @@ function hasEven(myNums:number[]):boolean {
 let ages: number[] = [5,8,42,44]
 console.log(hasEven(ages));
 
-function startWithM(myNames:string[]):boolean{
-    let i=0;
-    while (i<myNames.length)
-    {
-        if (!myNames[i].startsWith('M')){
-            return false
+
+
+function startWithM(myNames: string[]): boolean {
+    let allStartWithM = true;
+    let i = 0;
+
+    while (allStartWithM && i < myNames.length) {
+        if (myNames[i][0] !== 'M') {
+            allStartWithM = false;
         }
-        else{
-            return true
-        }
-        i++
+        i++;
     }
+
+    return allStartWithM;
 }
 
 let familyNames:string[] = ['Vega','Lucas','Jacobo','Patricia'];
 console.log(startWithM(familyNames));
 let inventedNames:string[] = ['Manolo','María','Melisa']
 console.log(startWithM(inventedNames));
-
-// no me deja compilar porque no reconoce el método Startswith
 
 
