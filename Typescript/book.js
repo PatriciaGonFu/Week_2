@@ -39,11 +39,9 @@ var Book = /** @class */ (function () {
     Book.prototype.getEditorial = function () {
         return this.editorial;
     };
+    Book.prototype.toString = function () {
+        return "Title - ".concat(this.title, "\n        Number of Pages - ").concat(this.nPages, "\n        Isbn - ").concat(this.isbn, "\n        Author - ").concat(this.author, "\n        Editorial - ").concat(this.editorial);
+    };
     return Book;
 }());
 exports.Book = Book;
-toString();
-string;
-{
-    return "".concat(this);
-}

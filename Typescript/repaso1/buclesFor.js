@@ -9,14 +9,12 @@
 // devuelva el array revertido. No se puede utilizar el método revert de la clase array
 // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
 // function myRevert(myArr: number[]): number[] {
+//         let newArray: number[] = [];
 //     for (let i = myArr.length - 1; i >= 0; i--) {
-//         const arrayAux = myArr[]: number[];
-//         myArr[length - 1 - i] = myArr[i];
-//         myArr[i] = arrayAux;
+//         newArray.push(myArr[i])
 //     }
-//     return myArr;
+//     return newArray;
 // }
-// me sale error en la linea 16
 // Realizar una función que reciba como parámetro un array de strings que contenga
 // nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.
 // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
@@ -37,8 +35,8 @@
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 function add(myWords) {
     var suma = 0;
-    for (i = 0; i < myWords.length; i++) {
-        suma = suma + myWords.length[i];
+    for (var i = 0; i < myWords.length; i++) {
+        suma = suma + myWords[i].length;
     }
     return suma;
 }

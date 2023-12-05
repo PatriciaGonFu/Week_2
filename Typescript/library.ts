@@ -1,32 +1,51 @@
 import { Book } from "./book";
 
-class Library {
-    private books: [];
-    private address : string;
-    private manager : string;
+export class Library {
+    private books: Book[];
+    private address: string;
+    private manager: string;
 
-    constructor (books:[],address:string,manager:string )
-    {
-        this.books = [];
+    constructor(books: Book[], address: string, manager: string) {
+        this.books = books;
         this.address = address;
         this.manager = manager;
     }
 
-    public getAddress ():string{
-        return this.address
-    }
-    public setAddress (newAdress : string):void{
-        this.address = newAdress
-    }
-    public getManager ():string{
-        return this.manager
-    }
-    public setManager (newManager : string):void{
-        this.manager = newManager
-    }
-    public toString ():string {
-
+    public getBook(): Book[]{
+        return this.books;
     }
 
+    public getAddress(): string {
+        return this.address;
+    }
 
+    public setAddress(address: string): void {
+        this.address = address;
+    }
+
+    public getManager(): string {
+        return this.manager;
+    }
+
+    public setManager(manager: string): void {
+        this.manager = manager;
+    }
+
+    public toString(): string {    
+            return `Books- ${this.books}
+                    Address - ${this.address}
+                    Manager - ${this.manager}`  
+    }
+    
+
+    public getNumberOfBooks():number{
+        return this.books.length
+    }
+
+    public findByAuthor(author: string): Book[] {
+        return this.books.filter(book => book.author === author);
+    }
 }
+
+
+

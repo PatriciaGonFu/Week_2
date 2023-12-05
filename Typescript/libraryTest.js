@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var library_1 = require("./library");
+var myLibrary = new library_1.Library([], "Dirección de la Biblioteca", "Gerente de la Biblioteca");
+var book1 = new book_1.Book("Reina Roja", 568, "9788466664417", "Juan Gómez Jurado", "Ediciones B");
+var book2 = new book_1.Book("La novia gitana", 408, "9788466372985", "Carmen Mola", "Debolsillo");
+var book3 = new book_1.Book("Esperando el diluvio", 576, "9788423362479", "Dolores Redondo", "Destino");
+console.log(myLibrary.toString());
+myLibrary.getBook().push(book1);
+myLibrary.getBook().push(book2);
+myLibrary.getBook().push(book3);
+console.log(myLibrary.toString());
+var libroPreferido = myLibrary.findByAuthor("Dolores Redondo");
+console.log(libroPreferido);
