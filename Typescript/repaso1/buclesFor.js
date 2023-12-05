@@ -8,13 +8,15 @@
 // Realizar una función que como parámetro de entrada reciba un array y como salida
 // devuelva el array revertido. No se puede utilizar el método revert de la clase array
 // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
-// function myRevert(myArr: number[]): number[] {
-//         let newArray: number[] = [];
-//     for (let i = myArr.length - 1; i >= 0; i--) {
-//         newArray.push(myArr[i])
-//     }
-//     return newArray;
-// }
+function myRevert(myArr) {
+    var newArray = [];
+    for (var i = myArr.length - 1; i >= 0; i--) {
+        newArray.push(myArr[i]);
+    }
+    return newArray;
+}
+var ages = [5, 8, 42, 44];
+console.log(myRevert(ages));
 // Realizar una función que reciba como parámetro un array de strings que contenga
 // nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.
 // La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors)
@@ -44,4 +46,3 @@ console.log(add(['gato', 'perro', 'mono']));
 module.exports = {
     add: add
 };
-// no funciona, al hacer la prueba en js me indica undefined
