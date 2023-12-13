@@ -14,3 +14,5 @@ console.log("Coordenada Y:", myPoint.getY());
 
 console.log(myPoint.toString());
 
+let anotherPoint = new Point(6, 8);
+console.log(myPoint.calculateDistance(anotherPoint)); 

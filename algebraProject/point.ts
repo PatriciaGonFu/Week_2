@@ -24,4 +24,16 @@ export class Point{
     public toString(): string {
         return `(${this.x},${this.y})`;
     }
+
+    public distanceToOrigin(): number {
+        const distance = Math.sqrt(this.x * this.x + this.y * this.y);
+        return distance;
+    }
+
+    public calculateDistance(anotherPoint: Point): number {
+        const distance = Math.sqrt(
+            Math.pow(anotherPoint.getX() - this.x, 2) + Math.pow(anotherPoint.getY() - this.y, 2)
+        );
+        return distance;
+    }
 }
