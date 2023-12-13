@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var point_1 = require("./point");
+var myPoint = new point_1.Point(3, 4);
+console.log("Coordenadas iniciales:");
+console.log("Coordenada X:", myPoint.getX());
+console.log("Coordenada Y:", myPoint.getY());
+myPoint.setX(7);
+myPoint.setY(9);
+console.log("Coordenada X:", myPoint.getX());
+console.log("Coordenada Y:", myPoint.getY());
+console.log(myPoint.toString());
