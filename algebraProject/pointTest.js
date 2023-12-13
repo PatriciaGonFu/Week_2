@@ -12,3 +12,4 @@ console.log("Coordenada Y:", myPoint.getY());
 console.log(myPoint.toString());
 var anotherPoint = new point_1.Point(6, 8);
 console.log(myPoint.calculateDistance(anotherPoint));
+console.log(myPoint.calcularQuadrant());

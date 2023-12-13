@@ -36,4 +36,24 @@ export class Point{
         );
         return distance;
     }
+
+    public calcularQuadrant():number{
+        let quadrant;
+        if(this.x ===0 && this.y === 0){
+            quadrant = 0;
+        }
+        else if(this.x >0 && this.y >0){
+            quadrant = 1;
+        }
+        else if(this.x <0 && this.y>0){
+            quadrant = 2;
+        }
+        else if(this.x <0 && this.y<0){
+            quadrant = 3;
+        }
+        if(this.x >0 && this.y<0){
+            quadrant = 4;
+        }
+        return quadrant;
+    }
 }

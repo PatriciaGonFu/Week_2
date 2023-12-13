@@ -16,3 +16,5 @@ console.log(myPoint.toString());
 
 let anotherPoint = new Point(6, 8);
 console.log(myPoint.calculateDistance(anotherPoint)); 
+
+console.log(myPoint.calcularQuadrant())
