@@ -56,6 +56,11 @@ export class Point{
         }
         return quadrant;
     }
+
+    public calculateNearest(points:Point[]): Point
+    {
+        
+    }
 }
 
 
